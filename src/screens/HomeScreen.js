@@ -135,4 +135,3 @@ const styles = StyleSheet.create({
   emptyTitle: { fontSize: 15, fontWeight: '700', color: colors.ink, textAlign: 'center' },
   emptyText: { fontSize: 12, color: colors.subtle, marginTop: 7, textAlign: 'center', lineHeight: 19 },
 });
-

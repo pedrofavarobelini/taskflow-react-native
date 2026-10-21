@@ -172,4 +172,3 @@ Os alertas do npm foram revisados em [docs/AUDITORIA.md](docs/AUDITORIA.md). Nã
 O Git local usa `main` e o remote de destino é `https://github.com/pedrofavarobelini/taskflow-react-native`. A autenticação local disponível no início desta revisão estava inválida. O status remoto será confirmado antes de declarar o trabalho publicado. Veja [PUBLICACAO_GITHUB.md](PUBLICACAO_GITHUB.md).
 
 Ainda precisam ser comprovados: abertura desta revisão no Expo Go 57.0.9, teclado/áreas seguras e persistência após fechar o app no Android, acessibilidade com fonte ampliada, desempenho no S23, vídeo real e acesso público anônimo ao repositório. Não há migração para SDK 58, integração com servidor, notificações ou sincronização em nuvem.
-

@@ -30,4 +30,3 @@ Não é preciso mostrar o valor técnico do ID na tela: a correspondência entre
 5. Publique e teste o download anônimo. Atualize README e `docs/VALIDACAO.md` com o resultado real.
 
 Se for necessário compactar um MP4 real, preserve a tela inteira, a sequência e a legibilidade. Não use mockups, slides, imagens geradas, dublagem de interface ou animações como prova de execução.
-

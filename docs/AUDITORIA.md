@@ -54,4 +54,3 @@ Essa avaliação é de alcance do código, não um pentest e nem uma declaraçã
 O aplicativo não tem credenciais, backend ou chamadas de rede para transmitir tarefas. AsyncStorage não é criptografado. Os logs de desempenho contêm tempos e quantidade, sem títulos ou descrições. O script `check:source` examina caminhos e padrões de credenciais sem imprimir um possível segredo; ele não cobre todo formato possível de informação confidencial.
 
 .gitignore exclui dependências, caches, builds, relatórios locais de ferramentas, arquivos .env e chaves. package-lock.json permanece incluído para instalação reproduzível. A identidade do Git foi configurada apenas neste repositório, com endereço noreply público. Outros repositórios não foram alterados.
-
