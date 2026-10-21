@@ -2,6 +2,8 @@
 
 Data: 21/10/2026. Alvo: Expo SDK 57 e Expo Go 57.0.9 no Samsung Galaxy S23.
 
+Revalidação posterior: [FINALIZACAO_ENTREGA.md](FINALIZACAO_ENTREGA.md), com nova execução dos 46 testes, Expo Doctor e verificador de entrega. O vídeo real ainda não foi disponibilizado.
+
 **STATUS FINAL: PENDENTE DE VALIDAÇÃO.** O código e as verificações locais estão concluídos; o repositório público está confirmado, mas faltam vídeo real e execução desta revisão em Android.
 
 ## IMPLEMENTADO

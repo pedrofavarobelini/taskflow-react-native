@@ -167,6 +167,8 @@ Os alertas do npm foram revisados em [docs/AUDITORIA.md](docs/AUDITORIA.md). Nã
 
 **Vídeo real: pendente.** Ainda não existe MP4 validado, nem link alternativo confirmado. Siga [o roteiro de até 30 segundos](demo/ROTEIRO_VIDEO.md) no Galaxy S23 e coloque a gravação em `demo/demo.mp4`. Depois execute `npm run validar-entrega`.
 
+Na revalidação de 21/10/2026, os **46 testes** e as **21 verificações do Expo Doctor** passaram novamente. `npm run validar-entrega` retornou **falha pela ausência do MP4**, que ainda não foi disponibilizado. Duração, contêiner e integridade do vídeo não puderam ser verificados. Veja o [relatório desta finalização](docs/FINALIZACAO_ENTREGA.md).
+
 ## Publicação e limitações
 
 O repositório [pedrofavarobelini/taskflow-react-native](https://github.com/pedrofavarobelini/taskflow-react-native) está público, com branch principal `main` e push confirmado. A API e o clone responderam sem autenticação. Veja [PUBLICACAO_GITHUB.md](PUBLICACAO_GITHUB.md).
