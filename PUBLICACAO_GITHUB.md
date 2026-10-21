@@ -1,55 +1,50 @@
 # Publicação do TaskFlow
 
-Destino solicitado: `pedrofavarobelini/taskflow-react-native`, público, com branch principal `main`.
+**Repositório público confirmado:** https://github.com/pedrofavarobelini/taskflow-react-native
 
-## Situação desta revisão
+Branch principal: **main**. O push, a visibilidade pública, a resposta anônima HTTP 200 e o clone HTTPS sem credenciais foram confirmados nesta revisão. O resultado completo está em [docs/VALIDACAO.md](docs/VALIDACAO.md).
 
-O conector GitHub confirmou a conta `pedrofavarobelini`, mas não oferece criação de repositórios. A consulta ao destino retornou 404. A CLI e o Git Credential Manager disponíveis estavam ligados a `favaropedrinho-spec`; a CLI informou token inválido. O navegador abriu a página de login. Nenhuma publicação foi confirmada e nenhum outro repositório foi alterado.
+O código foi publicado na conta solicitada. A configuração de identidade e autenticação Git fica restrita a este projeto; outros repositórios não foram modificados.
 
-É necessário autenticar a CLI na conta correta. Faça isso em um terminal seu, sem compartilhar senha ou token:
+## Clonar e conferir
 
 ```powershell
-gh auth login -h github.com
+git clone https://github.com/pedrofavarobelini/taskflow-react-native.git
+cd taskflow-react-native
+npm.cmd ci
+npm.cmd test
+npx.cmd expo install --check
+npm.cmd start
+```
+
+A ausência do vídeo faz `npm run validar-entrega` falhar de propósito. Código publicado não equivale a entrega acadêmica completa.
+
+## Atualizações futuras
+
+Confirme que a CLI usa a conta correta, sem compartilhar credenciais:
+
+```powershell
 gh api user --jq .login
 ```
 
-A segunda linha deve mostrar `pedrofavarobelini`.
+O resultado deve ser `pedrofavarobelini`. Se necessário, autentique em um terminal seu com `gh auth login -h github.com`. Nunca coloque tokens em arquivos do projeto ou na URL de origin.
 
-## Conferir e publicar
-
-Na pasta que contém este README:
+Depois de revisar as alterações:
 
 ```powershell
-npm.cmd ci
 npm.cmd test
 npm.cmd run check:source
 git status --short
-git remote -v
-gh repo view pedrofavarobelini/taskflow-react-native
+git add <arquivos-revisados>
+git commit -m "Descreve a alteracao"
+git push
 ```
 
-Se o destino não existir, crie-o vazio e público:
+Não use `--force` nem envie node_modules, caches, logs locais ou arquivos confidenciais. A configuração do helper Git deste projeto usa a autenticação do GitHub CLI, sem alterar a configuração global.
 
-```powershell
-gh repo create pedrofavarobelini/taskflow-react-native --public --description "Gerenciador de tarefas acadêmico em React Native e Expo SDK 57"
-```
+## Publicar o vídeo real
 
-Não execute a criação em outra conta. Se já existir, examine seu histórico antes de enviar. O Git local deste workspace já foi inicializado em `main`, com identidade restrita ao projeto e o remote solicitado. Não é preciso alterar a configuração global.
-
-```powershell
-git push -u origin main
-gh repo view pedrofavarobelini/taskflow-react-native --json url,visibility,defaultBranchRef
-```
-
-Não use `--force`. Se houver commits remotos inesperados, compare os históricos antes de integrar. A mera presença de um remote local não comprova publicação.
-
-## Conferir acesso anônimo
-
-Abra `https://github.com/pedrofavarobelini/taskflow-react-native` em janela anônima e confirme README, código e vídeo. Em outra pasta, clone sem autenticação e execute `npm ci`, `npm test` e `npx expo install --check`. Um clone local do Git verifica a integridade do projeto, mas não prova acesso público remoto.
-
-## Vídeo posterior
-
-Copie a gravação real do S23 para `demo/demo.mp4`, confira `demo/ROTEIRO_VIDEO.md` e execute:
+Copie a gravação verdadeira do Galaxy S23 para `demo/demo.mp4`. Siga [o roteiro](demo/ROTEIRO_VIDEO.md), confira legibilidade e execute:
 
 ```powershell
 npm.cmd run validar-entrega
@@ -58,6 +53,6 @@ git commit -m "Adiciona demonstracao real do TaskFlow"
 git push
 ```
 
-Atualize a documentação somente com o resultado verdadeiro da validação. O verificador aceita até 25 MB como limite de projeto para manter a entrega compacta; não envie vídeo enorme nem node_modules. Assista ao arquivo no GitHub ou baixe-o anonimamente para conferir acesso.
+O verificador usa ffprobe/FFmpeg para duração até 30 segundos, formato e decodificação. O limite de projeto de 25 MB mantém a entrega compacta. Depois teste o download sem autenticação e atualize a documentação com o resultado verdadeiro.
 
-A submissão acadêmica final e quaisquer critérios adicionais dependem da confirmação do enunciado pela professora.
+A submissão acadêmica final depende do vídeo, da homologação Android e da confirmação dos critérios adicionais do enunciado.

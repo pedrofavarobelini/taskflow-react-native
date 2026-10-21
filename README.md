@@ -2,7 +2,7 @@
 
 Gerenciador de tarefas em React Native e JavaScript para um trabalho acadêmico. Permite cadastrar, pesquisar, filtrar, editar, concluir e excluir atividades, acompanhar estatísticas e guardar os dados no próprio dispositivo, sem conta ou servidor.
 
-**Estado da entrega:** código revisado e testes automatizados executados. A homologação desta revisão no Samsung Galaxy S23, o vídeo real e a publicação pública ainda precisam ser concluídos. Consulte [o relatório de validação](docs/VALIDACAO.md).
+**Estado da entrega:** código revisado, testado e [publicado no GitHub](https://github.com/pedrofavarobelini/taskflow-react-native). A homologação desta revisão no Samsung Galaxy S23 e o vídeo real ainda precisam ser concluídos. Consulte [o relatório de validação](docs/VALIDACAO.md).
 
 ## Objetivo acadêmico
 
@@ -41,7 +41,7 @@ Não há números fixos usados como estatísticas. Quando a chave ainda não exi
 
 ## Instalação reproduzível
 
-Depois da publicação pública:
+Clone o repositório público:
 
 ```sh
 git clone https://github.com/pedrofavarobelini/taskflow-react-native.git
@@ -49,7 +49,7 @@ cd taskflow-react-native
 npm ci
 ```
 
-O endereço acima é o **destino de publicação**, e não uma declaração de que o repositório já está disponível. `npm ci` usa o lockfile versionado. `npm install` também foi executado nesta revisão.
+O acesso público e o clone sem credenciais foram confirmados nesta revisão. `npm ci` usa o lockfile versionado. `npm install` também foi executado nesta revisão.
 
 No PowerShell, use `npm.cmd` e `npx.cmd` se a política local bloquear os atalhos `.ps1`.
 
@@ -157,7 +157,7 @@ npm run validar-entrega
 
 `npm test` executa testes de lógica/persistência e de interface. Nesta revisão passaram **32 testes Node e 14 testes Jest**: cadastro, edição, exclusão, conclusão, filtros, busca, estatísticas, persistência ao reabrir a camada de dados, falhas de leitura/escrita, concorrência, dados inválidos, hidratação e navegação real em ambiente de teste.
 
-O AsyncStorage é substituído por uma implementação em memória nos testes; os componentes nativos usam o ambiente do Jest Expo. Isso **não é um teste do binário Android**. Os bundles para Android, iOS e Web foram gerados com Metro/Hermes, sem equivaler a compilação Gradle/Xcode ou homologação em aparelho.
+O AsyncStorage é substituído por uma implementação em memória nos testes; os componentes nativos usam o ambiente do Jest Expo. Isso **não é um teste do binário Android**. Os bundles para Android, iOS e Web foram gerados com Metro/Hermes, sem equivaler a compilação Gradle/Xcode ou homologação em aparelho. Também foram aprovados um clone local e um clone HTTPS anônimo do GitHub em pastas separadas, com npm ci, os 46 testes, checagem de arquivos e matriz Expo, sem alterar o lockfile.
 
 `validar-entrega` retorna falha enquanto faltar `demo/demo.mp4`. Com o arquivo presente, usa ffprobe e FFmpeg para validar contêiner, duração até 30 segundos e decodificação. Autenticidade e legibilidade precisam de revisão humana. Esse comando também não confirma sozinho a publicação no GitHub.
 
@@ -169,6 +169,6 @@ Os alertas do npm foram revisados em [docs/AUDITORIA.md](docs/AUDITORIA.md). Nã
 
 ## Publicação e limitações
 
-O Git local usa `main` e o remote de destino é `https://github.com/pedrofavarobelini/taskflow-react-native`. A autenticação local disponível no início desta revisão estava inválida. O status remoto será confirmado antes de declarar o trabalho publicado. Veja [PUBLICACAO_GITHUB.md](PUBLICACAO_GITHUB.md).
+O repositório [pedrofavarobelini/taskflow-react-native](https://github.com/pedrofavarobelini/taskflow-react-native) está público, com branch principal `main` e push confirmado. A API e o clone responderam sem autenticação. Veja [PUBLICACAO_GITHUB.md](PUBLICACAO_GITHUB.md).
 
-Ainda precisam ser comprovados: abertura desta revisão no Expo Go 57.0.9, teclado/áreas seguras e persistência após fechar o app no Android, acessibilidade com fonte ampliada, desempenho no S23, vídeo real e acesso público anônimo ao repositório. Não há migração para SDK 58, integração com servidor, notificações ou sincronização em nuvem.
+Ainda precisam ser comprovados: abertura desta revisão no Expo Go 57.0.9, teclado/áreas seguras e persistência após fechar o app no Android, acessibilidade com fonte ampliada, desempenho no S23 e vídeo real. Não há migração para SDK 58, integração com servidor, notificações ou sincronização em nuvem.

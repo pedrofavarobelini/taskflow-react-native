@@ -47,8 +47,8 @@ Resultado de uma execução em Node 24.13.0:
 
 | Medida | Sequência anterior | Store atual |
 | --- | ---: | ---: |
-| Dados disponíveis | 31,75 ms | 35,90 ms |
-| Armazenamento sem operação pendente | 62,51 ms | 35,91 ms |
+| Dados disponíveis | 31,64 ms | 34,71 ms |
+| Armazenamento sem operação pendente | 65,07 ms | 34,71 ms |
 | Leituras iniciais | 1 | 1 |
 | Gravações iniciais | 1 | 0 |
 

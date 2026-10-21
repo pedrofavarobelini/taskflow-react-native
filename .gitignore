@@ -13,6 +13,7 @@ npm-debug.log*
 .cache/
 validation/
 .clean-install/
+.public-install/
 *.log
 *.tmp
 *.tsbuildinfo
