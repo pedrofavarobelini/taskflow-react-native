@@ -1,9 +1,9 @@
-# Demonstração obrigatória
+# Demonstração do TaskFlow
 
-**PENDENTE:** o MP4 real ainda não foi produzido ou recebido. O roteiro está em [ROTEIRO_VIDEO.md](ROTEIRO_VIDEO.md).
+Esta pasta contém materiais para apresentar o funcionamento do aplicativo.
 
-Na revalidação de 21/10/2026, `demo/demo.mp4` continuava ausente tanto do workspace quanto da branch pública `main`. O comando `npm run validar-entrega` foi executado e retornou código 1 por essa ausência. Duração, formato e integridade não foram validados sem o arquivo. Resultado completo: [FINALIZACAO_ENTREGA.md](../docs/FINALIZACAO_ENTREGA.md).
+Para gravar uma demonstração curta, abra o TaskFlow no Expo Go e mostre a lista de tarefas, a navegação para os detalhes e uma alteração de status. Também é possível demonstrar a criação de uma tarefa.
 
-Grave esta revisão no Samsung Galaxy S23 com Expo Go 57.0.9. O vídeo deve ser uma tomada verdadeira de até 30 segundos, em MP4, com texto legível, navegação, detalhes por parâmetro e alteração real do estado. Depois copie para `demo/demo.mp4` e execute `npm run validar-entrega`.
+O roteiro sugerido está em [ROTEIRO_VIDEO.md](ROTEIRO_VIDEO.md).
 
-O verificador não inventa um vídeo nem avalia sozinho sua autenticidade ou legibilidade. Sem MP4 real validado e acessível, o trabalho não está aprovado para entrega.
+O comando `npm run validar-entrega` espera um arquivo chamado `demo/demo.mp4` com até 30 segundos. Esse arquivo ainda não foi adicionado nesse caminho, portanto a verificação da demonstração continua pendente. A gravação deve mostrar o aplicativo em execução real.
